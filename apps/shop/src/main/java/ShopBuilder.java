@@ -1,3 +1,5 @@
+import person.staff.BasicStaff;
+import person.staff.Staff;
 import time.ShopTime;
 import time.SimpleShopTime;
 import time.digit.ShopHour;
@@ -47,7 +49,7 @@ public class ShopBuilder {
     private List<Staff> createStaff(int noOfStaff) {
         List<Staff> staff = new ArrayList<>();
         for(int i = 0; i < noOfStaff; i++) {
-            staff.add(new Staff());
+            staff.add(new BasicStaff());
         }
         return staff;
     }

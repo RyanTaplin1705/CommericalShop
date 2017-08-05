@@ -1,3 +1,5 @@
+import person.staff.BasicStaff;
+import person.staff.Staff;
 import time.ShopTime;
 import time.SimpleShopTime;
 import time.digit.ShopHour;
@@ -9,7 +11,7 @@ import java.util.List;
 public class ShopBuilderHelper {
     // SHOP ITEMS
     private static final Till till = new Till();
-    private static final Staff staff = new Staff();
+    private static final Staff staff = new BasicStaff();
 
     // DEFAULT SHOP
     public static final int NO_OF_DEFAULT_TILLS = 5;
