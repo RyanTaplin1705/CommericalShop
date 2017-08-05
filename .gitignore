@@ -1,3 +1,7 @@
 .idea/
 target/
-CommericalShop.iml
+/CommericalShop.iml
+/warehouse
+/webser
+apps/deliveryservice/
+apps/webservice/
