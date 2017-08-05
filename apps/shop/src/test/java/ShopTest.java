@@ -1,6 +1,5 @@
 import org.junit.Before;
 import org.junit.Test;
-import time.ShopTime;
 import time.SimpleShopTime;
 import time.digit.ShopHour;
 import time.digit.ShopMinute;
@@ -41,15 +40,15 @@ public class ShopTest {
     @Test
     public void shopHasDefaultHoursOf9hrTo18hr() throws Exception {
         givenDefaultShop();
-        assertThat(shop.getOpeningHour()).isEqualTo(DEFAULT_OPENING);
-        assertThat(shop.getClosingHour()).isEqualTo(DEFAULT_CLOSING);
+        assertThat(shop.openingHour).isEqualTo(DEFAULT_OPENING);
+        assertThat(shop.closingHour).isEqualTo(DEFAULT_CLOSING);
     }
 
     @Test
     public void shopCanHaveCustomHoursOf0To23() throws Exception {
         givenCustomShop();
-        assertThat(shop.getOpeningHour()).isEqualTo(CUSTOM_OPENING);
-        assertThat(shop.getClosingHour()).isEqualTo(CUSTOM_CLOSING);
+        assertThat(shop.openingHour).isEqualTo(CUSTOM_OPENING);
+        assertThat(shop.closingHour).isEqualTo(CUSTOM_CLOSING);
     }
 
     private void givenCustomShop() {
