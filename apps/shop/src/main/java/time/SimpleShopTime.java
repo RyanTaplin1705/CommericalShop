@@ -14,17 +14,17 @@ public class SimpleShopTime implements ShopTime {
     private int minutes = 0;
     private int seconds = 0;
 
-    public ShopTime withHour(ShopHour hour) {
+    public SimpleShopTime withHour(ShopHour hour) {
             this.hours = hour.value();
         return this;
     }
 
-    public ShopTime withMinute(ShopMinute minute) {
+    public SimpleShopTime withMinute(ShopMinute minute) {
             this.minutes = minute.value();
         return this;
     }
 
-    public ShopTime withSecond(ShopSecond second) {
+    public SimpleShopTime withSecond(ShopSecond second) {
         this.seconds = second.value();
         return this;
     }
